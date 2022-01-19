@@ -1,0 +1,263 @@
+html {
+    background-image: url("../../images/bg-intro-desktop.png");
+    background-color: rgba(255, 0, 0, .5);
+}
+
+body {
+    margin: auto;
+   
+}
+
+#container {
+    max-width: 375px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.intro {
+    justify-content: left;
+}
+
+.info {
+    display: flex;
+    background-color: hsl(228, 45%, 44%);
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    padding: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 5px rgba(62, 60, 73, .5);
+
+}
+
+.signUp {
+    background-color: white;
+    margin: 20px auto 10px auto;
+    padding: 1rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 90%;
+    font-size: 9px; 
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px rgba(62, 60, 73, .2);
+    flex-shrink: 1;
+}
+
+.invalid {
+    border: red solid 2px;
+}
+.valid {
+    border: green solid 2px;
+}
+
+
+button {
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px rgba(62, 60, 73, .8);
+}
+
+h1 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    
+}
+h2 {
+    font-weight:500;
+    font-size: 16px;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+form {
+   text-align: center;
+}
+footer {
+    position: fixed;
+}
+#FirstName, #LastName, #email, #password {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    padding: 18px 20px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color: rgba(62, 60, 73, .2);
+    border-width: 1.5px;
+}
+
+#TermsServices {
+    color: hsl(154, 59%, 51%);
+    text-decoration: none;
+}
+
+@media (min-width: 375px) {
+    body {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+   #container{
+       max-width: 375px;
+   } 
+}
+
+@media (min-width: 1170px) {
+    html {
+        background-image: url("../../images/bg-intro-desktop.png");
+        background-color: rgba(255, 0, 0, .5);
+    }
+    
+    body {
+        display: flex;
+        max-width: 1440px;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #container {
+        box-sizing: border-box;
+      max-width: 1440px;
+        /* top: 50%; */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+        grid-auto-flow: column;
+        align-content: center;
+        padding: 40px;
+        margin: 60px;
+        flex-direction: column;
+        height: 100vh;
+        /* align-items: center; */
+        column-gap: 20px;
+       
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-content: left;
+        max-width: 100%;
+        width: 80%;
+        margin: auto;
+        flex-shrink: 1;
+    }
+    
+    .info {
+        background-color: hsl(228, 45%, 44%);
+        flex: auto;
+        width: 100%;
+        margin: auto;
+        height: 50px;
+        justify-content: center;
+        padding: 0;
+        border-radius: 8px;
+        color: white;
+        box-shadow: 0 5px rgba(62, 60, 73, .5);
+    
+    }
+    
+    .signUp {
+        background-color: white;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 9px; 
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 5px rgba(62, 60, 73, .2);
+        width: 90%;
+        flex-shrink: 1;
+    padding: 3em;
+         }
+    
+    .button {
+        color: white;
+        background-color: hsl(154, 59%, 51%);
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px rgba(62, 60, 73, .8);
+    }
+    
+    h1 {
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 3rem;
+        text-align: left;
+        
+    }
+    h5 {
+        font-weight:500;
+    }
+    
+    p {
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 200;
+        text-align: left;
+    }
+    
+    form {
+       text-align: center;
+    }
+    
+    footer {
+        position: fixed;
+    }
+    #FirstName, #LastName, #email, #password {
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        padding: 18px 20px;
+        height: 30px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border-color: rgba(62, 60, 73, .2);
+        border-width: 1.5px;
+    }
+    #TermsServices {
+        color: hsl(154, 59%, 51%);
+        text-decoration: none;
+    }
+} 
