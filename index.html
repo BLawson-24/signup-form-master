@@ -41,36 +41,35 @@
         </div>
         <div class="signUp">
 
-          <div id="error"></div>
-          <form id="SignUpForm">
+          <!-- <div id="error"></div> -->
+          <form id="signUpForm">
 
-            <div class="FirstName">
-            <label for="FirstName">
-              <input type="text" name="FirstName" id="FirstName" placeholder="First Name" aria-describedby="FirstNameField">
-              <error class="error" id="FirstNameError"></error>
+            <div class="firstName">
+            <label for="firstName">
+              <input type="text" name="firstName" id="firstName" placeholder="First Name" aria-describedby="firstNameField">
+              <span class="error" >Test</span>
         </label>
       </div>
 
-        <div class="Lastname">
-         <label for="LastName">
-           <input type="text" name="LastName" id="LastName" placeholder="Last Name" aria-describedby="LastNameField">
-           <error class="error" id="LastNameError"></error>
-           <span id="LastError"></span>
+        <div class="lastName">
+         <label for="lastName">
+           <input type="text" name="lastName" id="lastName" placeholder="Last Name" aria-describedby="lastNameField">
+           <error class="error" id="lastNameError">Last Name cannot be empty</error>
          </label> 
         </div>
           <div class="email">
          <label for="email">
            <input type="email" id="email" placeholder="Email Address" aria-describedby="emailField">
-           <error class="error" id="emailError"></error>
+           <error class="error" id="emailError">Looks like this is not an email.</error>
          </label> 
         </div>
         <div class="password">
          <label for="password">
            <input type="password" name="password" id="password" placeholder="Password" aria-describedby="passwordField">
-           <error class="error" id="passwordError"></error>
+           <error class="error" id="passwordError">Password cannot be empty</error>
          </label> 
         </div>
-         <button id="claimButton" type="submit">Claim your free trial</button>
+         <button id="submit" type="submit" >Claim your free trial</button>
         </form> 
         By clicking the button, you are agreeing to our <strong><a href="www.dkdsd.com" id="TermsServices">Terms and Services<a></strong>
         </div>

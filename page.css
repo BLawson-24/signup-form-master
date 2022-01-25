@@ -53,12 +53,15 @@ body {
 }
 
 .invalid {
-    border: red solid 2px;
+    border: 2px solid red !important;
 }
 .valid {
-    border: green solid 2px;
+    border: 2px solid green !important;
 }
 
+.error {
+    display: none;
+}
 
 button {
     color: white;
@@ -98,7 +101,7 @@ form {
 footer {
     position: fixed;
 }
-#FirstName, #LastName, #email, #password {
+#firstName, #lastName, #email, #password {
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     display: flex;
@@ -126,6 +129,13 @@ footer {
    #container{
        max-width: 375px;
    } 
+
+.invalid {
+    border: red solid 2px;
+}
+.valid {
+    border: green solid 2px;
+}
 }
 
 @media (min-width: 1170px) {
@@ -204,7 +214,7 @@ footer {
     padding: 3em;
          }
     
-    .button {
+    button {
         color: white;
         background-color: hsl(154, 59%, 51%);
         font-family: 'Barlow Semi Condensed', sans-serif;
@@ -216,6 +226,13 @@ footer {
         box-shadow: 0 2px rgba(62, 60, 73, .8);
     }
     
+    .invalid {
+        border: red solid 2px;
+    }
+    .valid {
+        border: green solid 2px;
+    }
+
     h1 {
         color: white;
         font-family: 'Raleway', sans-serif;
@@ -243,7 +260,7 @@ footer {
     footer {
         position: fixed;
     }
-    #FirstName, #LastName, #email, #password {
+    #firstName, #lastName, #email, #password {
         font-family: 'Raleway', sans-serif;
         font-size: 12px;
         display: block;

@@ -1,8 +1,11 @@
+const firstName = document.getElementById("firstName")
+const lastName = document.getElementById("lastName")
+const email = document.getElementById("email")
+const password = document.getElementById("password")
+const form = document.getElementById("signUpForm")
+const firstNameError = document.getElementById("firstNameError")
 
-const inputs = document.querySelectorAll('input')
-console.log('inputs', inputs)
-
-let submit = document.getElementById('claimButton');
+const submit = document.getElementById("submit");
 
 // inputs.forEach(function logKey() {
 //   submit.addEventListener('keyup', logKey);
@@ -41,26 +44,41 @@ let submit = document.getElementById('claimButton');
 // })
 // -----------------------------------------------------------------------------------
 
-inputs.forEach(input => {
-    console.log(input)
-    input.addEventListener("keyup", e => {
-      e.preventDefault()  
-      const value = e.target.value
-      const fieldName = e.target.attributes.name
-      const element = document.getElementById(fieldName)
-      if(fieldName === 'FirstName') {
-        if(value === '') {
-            className = "invalid"
-        } else if(value.length > 0) {
-            element.classList.add('valid')
-            console.log("hey")
-        }
+
+form.addEventListener("submit", (e) => {
+    if(firstName.value === '' || firstName.value === null) {
+        e.preventDefault();
+        firstName.classList.add("invalid");
+        firstName.classList.remove("error")
+    } else {
+        firstName.classList.add("valid");
     }
-    
-    })
-});
-
-
+    if(lastName.value === '' || lastName.value === null) {
+        lastName.classList.add("invalid");
+    } else {
+        lastName.classList.add("valid");
+    }
+    // console.log("email", typeof email.value)
+    if(!email.value.includes("@") && !email.value.includes(".com")) {
+        email.classList.add("invalid");
+        console.log("This field must not be empty.")
+    } else {
+        email.classList.add("valid");
+    }
+    if(password.value === '' || password.value === null || password.value.length <= 5) {
+        password.classList.add("invalid");
+    } else {
+        password.classList.add("valid");
+    }
+    });
+// form.addEventListener("submit", e => {
+//     e.preventDefault();
+//     if(firstName.value === '' || lastName.value === null) {
+//         lastName.classList.add("invalid");
+//     } else {
+//         lastName.classList.add("valid");
+//     }
+// });
 
 
 // ------------------------------------------------------------------------------
